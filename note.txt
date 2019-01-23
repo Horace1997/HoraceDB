@@ -1,0 +1,117 @@
+es6常用特性
+
+let, 箭头函数, promise, reflect, proxy, class, async await, arrayAPI, stringAPI
+
+await可以使用也不使用, 如果是await, 必须配合 async 函数使用
+
+gitbash: 集成git命令一个工具
+
+进入d盘
+cd /d
+
+查看文件
+ls
+
+查看文件包含隐藏文件
+ls -a
+
+进入文件夹
+cd ./文件夹路径
+
+跳出文件夹 ..表示一个文件夹
+cd ..
+
+查看文件信息
+cat 文件名称
+
+编辑文件
+vim 文件路径
+编辑文件: 按下键盘 i键 可进入编辑模式, 
+退出不保存文件: 按下esc键, 输入 :q! 回车
+退出保存文件: 按下esc键 输入:wq 回车
+
+清除历史记录
+clear
+ctrl + l
+
+创建文件夹
+mkdir 文件夹名称1 文件夹名称2 文件夹名称3
+
+删除文件夹 r: 递归  f: 强制
+rm -rf 文件夹路径1 文件夹路径2 文件夹路径3
+
+删除文件
+rm 文件名称
+
+创建文件
+touch 文件路径1 文件路径2 文件路径3
+
+移动文件获
+mv 旧路径 新路径   比如 mv home.css home/home.css
+
+移动文件夹
+mv 旧文件夹路径 新文件夹路径
+
+修改文件名
+mv 旧文件名称 新的文件名称
+
+结束当前进程
+ctrl + c
+
+进入最初始目录
+cd ~
+
+3465280796@qq.com
+
+git: 分布式版本控制系统
+
+切换用户需要配置用户信息
+配置git全局用户信息
+git config --global user.name "dawuchuan"
+git config --global user.email "3465280796@qq.com"
+
+查看配置用户信息
+git config user.name
+git config user.email
+
+查git仓库状态 状态: 文件变化(修改文件, 删除文件, 新增文件)
+git status
+
+
+推送代码到远程仓库四个步骤
+
+1、将文件添加到暂存区
+git add .
+
+2、将文件添加到临时本地仓库
+git commit -m "你的注释"
+
+3、拉取远程仓库代码, 验证码是否存在冲突
+git pull
+
+4、将代码推送到远程仓库
+git push -u origin master
+
+
+git推送代码到远程仓库出现的的错误
+git push -u origin master
+remote: Permission to dawuchuan/wuchuan.git denied to gitbashkang.
+fatal: unable to access 'https://github.com/dawuchuan/wuchuan.git/': The requested URL returned error: 403
+
+解决方法
+打开控制面板 -> 凭据管理器 -> 删除相应git的普通凭据
+
+
+推送代码时, 出现代码冲突
+A程序员和B程序员克隆同版本的远程仓库代码, A修改index.js文件的第一行, B也修改index.js文件的第一行, A将代码先把代码推送到远程仓库, A是成功推送的, 之后B也将代码推送到远程仓库, B无法推送, 原因发生代码冲突
+
+先配置
+git config --global user.name "dawuchuan"
+git config --global user.email "3465280796@qq.com"
+
+https://github.com/dawuchuan/wuchuan.git
+
+用户名: dawuchuan
+邮箱: 3465280796@qq.com
+密码: dawuchuan123456
+
